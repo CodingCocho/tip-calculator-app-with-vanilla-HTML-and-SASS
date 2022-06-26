@@ -164,10 +164,14 @@ const checkCustomInput = () =>
     }
     if(custom.length === 0 || custom === "" || customAmount === 0)
     {
+        tipMessage.innerHTML = "$0.00";
+        totalMessage.innerHTML = "$0.00";
         return false;
     }
     else if(isNaN(custom) || decimalFlag && !(Number.isInteger(customAmount)))
     {
+        tipMessage.innerHTML = "$0.00";
+        totalMessage.innerHTML = "$0.00";
         return false;
     }
     else
@@ -177,11 +181,7 @@ const checkCustomInput = () =>
 }
 const percentCustom = () =>
 {
-    if(!validateInputs())
-    {
-        return;
-    }
-    if(!checkCustomInput())
+    if(!validateInputs() || !checkCustomInput())
     {
         return;
     }
@@ -200,4 +200,6 @@ const reset = () =>
     customInput.value = "Custom";
     customerInput.value = "0";
     resetButton.disabled = true;
+    tipMessage.innerHTML = "$0.00";
+    totalMessage.innerHTML = "$0.00";
 }
