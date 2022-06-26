@@ -1,0 +1,273 @@
+$color1: hsl(172, 67%, 45%);
+$color2: hsl(183, 100%, 15%);
+$color3: hsl(186, 14%, 43%);
+$color4: hsl(184, 14%, 56%);
+$color5: hsl(185, 41%, 84%);
+$color6: hsl(189, 41%, 97%);
+$color7: hsl(0, 0%, 100%);
+$form-font-size: 24px;
+$main-weight: 700;
+$app-font: 'Space Mono', monospace;
+
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: $app-font;
+    background-color: $color5;
+}
+
+.main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #logo-image
+    {
+        margin-top: 50px;
+        height: 50px;
+        width: 75px;
+    }
+    .card
+    {
+        width: 375px;
+        margin-top: 25px;
+        background-color: $color7;
+        border-radius: 20px;
+        text-align: left;
+        padding: 20px;
+        .input-label
+        {
+            color: $color4;
+            font-weight: $main-weight;
+        }
+        #tip-label
+        {
+            margin-top: 20px;
+            color: $color4;
+            font-weight: $main-weight;
+        }
+        .grid-container
+        {
+            display: grid;
+            gap: 10px;
+            grid-template: 1fr 1fr 1fr / 1fr 1fr;
+            margin-top: 10px;
+            width: 100%;
+            div
+            {
+                border-radius: 5px;
+                padding: 5px 30px;
+                display: flex;
+                align-content: center;
+                justify-content: center;
+            }
+        }
+        .customers-input-container
+        {
+            background-color: $color6;
+            border-radius: 5px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .card-2
+        {
+            margin-top: 20px;
+            background-color: $color2;
+            border-radius: 10px;
+            padding-top: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+            .tip-container
+            {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                text-align: left !important;
+            }
+            .total-container
+            {
+                margin-top: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                text-align: left !important;
+            }
+            .reset-button
+            {
+                width: 100%;
+                background-color: $color1;
+                border: none;
+                border-radius: 10px;
+                color: $color2;
+                margin-top: 20px;
+                padding: 10px 0px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.calculator-input
+{
+    width: 33%;
+    background: transparent;
+    border: none;
+    color: $color2;
+    font-size: $form-font-size;
+    font-family: $app-font;
+    font-weight: $main-weight;
+    text-align: right;
+}
+
+.calculator-input:focus
+{
+    outline: none;
+}
+
+.grid-button
+{
+    width: 150px;
+    color: $color7;
+    background-color: $color2;
+    font-weight: 700;
+    font-size: $form-font-size;
+}
+
+.bill-input-container
+{
+    background-color: $color6 !important;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid-button-2
+{
+    width: 150px;
+    background-color: $color6;
+    input
+    {
+        border: none;
+        background: transparent;
+        font-size: $form-font-size;
+        font-weight: $main-weight;
+        color: $color2;
+        text-align: right;
+        width: 100%;
+    }
+}
+
+input:focus 
+{
+    outline: none;
+}
+
+input::placeholder
+{
+    color: $color2;
+}
+
+.grid-button:hover
+{
+    background-color: hsl(172, 67%, 45%) !important;
+}
+
+.grid-button:hover, .grid-button-2:hover
+{
+    cursor: pointer;
+}
+
+#card-2-text-1
+{
+    color: $color7;
+    font-size: .875rem;
+}
+
+#card-2-text-2
+{
+    color: $color4;
+    font-size: .5rem;
+}
+
+#tip-per-person, #total-per-person
+{
+    color: $color1;
+    font-size: $form-font-size;
+    font-weight: $main-weight;
+}
+
+.desktop-container-1
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.desktop-container-2
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.reset-button:hover
+{
+    cursor: pointer;
+}
+
+.flex-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#flex-container-2
+{
+    margin-top: 20px;
+}
+
+#error-1, #error-2
+{
+    color: hsl(0, 100%, 74%);
+}
+
+.reset-button:disabled
+{
+    background-color: hsl(186, 14%, 43%) !important;
+}
+
+@media screen and (min-width: 1024px)
+{
+    .card
+    {
+        width: 800px !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .card-2
+    {
+        margin-top: 0px !important;
+        width: 50%;
+        justify-content: space-between;
+        flex-direction: column;
+        display: flex !important;
+        position: relative;
+    }
+    .reset-button
+    {
+        margin-top: 0px !important;
+        position: relative;
+    }
+}

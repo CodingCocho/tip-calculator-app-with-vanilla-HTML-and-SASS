@@ -1,0 +1,319 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: #c5e4e7;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main #logo-image {
+  margin-top: 50px;
+  height: 50px;
+  width: 75px;
+}
+
+.main .card {
+  width: 375px;
+  margin-top: 25px;
+  background-color: white;
+  border-radius: 20px;
+  text-align: left;
+  padding: 20px;
+}
+
+.main .card .input-label {
+  color: #7f9c9f;
+  font-weight: 700;
+}
+
+.main .card #tip-label {
+  margin-top: 20px;
+  color: #7f9c9f;
+  font-weight: 700;
+}
+
+.main .card .grid-container {
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+  -ms-grid-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template: 1fr 1fr 1fr / 1fr 1fr;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.main .card .grid-container div {
+  border-radius: 5px;
+  padding: 5px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .card .customers-input-container {
+  background-color: #f4fafa;
+  border-radius: 5px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .card .card-2 {
+  margin-top: 20px;
+  background-color: #00494d;
+  border-radius: 10px;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.main .card .card-2 .tip-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left !important;
+}
+
+.main .card .card-2 .total-container {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left !important;
+}
+
+.main .card .card-2 .reset-button {
+  width: 100%;
+  background-color: #26c0ab;
+  border: none;
+  border-radius: 10px;
+  color: #00494d;
+  margin-top: 20px;
+  padding: 10px 0px;
+  text-align: center;
+}
+
+.calculator-input {
+  width: 33%;
+  background: transparent;
+  border: none;
+  color: #00494d;
+  font-size: 24px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  text-align: right;
+}
+
+.calculator-input:focus {
+  outline: none;
+}
+
+.grid-button {
+  width: 150px;
+  color: white;
+  background-color: #00494d;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.bill-input-container {
+  background-color: #f4fafa !important;
+  border-radius: 5px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid-button-2 {
+  width: 150px;
+  background-color: #f4fafa;
+}
+
+.grid-button-2 input {
+  border: none;
+  background: transparent;
+  font-size: 24px;
+  font-weight: 700;
+  color: #00494d;
+  text-align: right;
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::-webkit-input-placeholder {
+  color: #00494d;
+}
+
+input:-ms-input-placeholder {
+  color: #00494d;
+}
+
+input::-ms-input-placeholder {
+  color: #00494d;
+}
+
+input::placeholder {
+  color: #00494d;
+}
+
+.grid-button:hover {
+  background-color: #26c0ab !important;
+}
+
+.grid-button:hover, .grid-button-2:hover {
+  cursor: pointer;
+}
+
+#card-2-text-1 {
+  color: white;
+  font-size: .875rem;
+}
+
+#card-2-text-2 {
+  color: #7f9c9f;
+  font-size: .5rem;
+}
+
+#tip-per-person, #total-per-person {
+  color: #26c0ab;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.desktop-container-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.desktop-container-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reset-button:hover {
+  cursor: pointer;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#flex-container-2 {
+  margin-top: 20px;
+}
+
+#error-1, #error-2 {
+  color: #ff7a7a;
+}
+
+.reset-button:disabled {
+  background-color: #5e7a7d !important;
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 800px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .card-2 {
+    margin-top: 0px !important;
+    width: 50%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    position: relative;
+  }
+  .reset-button {
+    margin-top: 0px !important;
+    position: relative;
+  }
+}
+/*# sourceMappingURL=style.css.map */

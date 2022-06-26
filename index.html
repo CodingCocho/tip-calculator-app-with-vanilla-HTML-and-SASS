@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Tip Calculator App</title>
+
+</head>
+<body>
+
+  <section class="main">
+    <img src="./images/logo.svg" alt="logo" id="logo-image">
+
+    <div class="card">
+
+      
+      <div class="desktop-container-1">
+        <div class="flex-container">
+          <label class="input-label" for="bill">Bill</label>
+          <p id="error-1"></p>
+        </div>
+        
+        <div class="bill-input-container">
+          <img src="./images/icon-dollar.svg" alt="dollar">
+          <input type="text" name="bill" id="bill-input" class="calculator-input" placeholder="0" onkeyup="validateInputs()">
+        </div>
+        
+        <p id="tip-label">Select Tip %</p>
+        
+        <div class="grid-container">
+          <div class="grid-button" onclick="percent5()">5%</div>
+          <div class="grid-button" onclick="percent10()">10%</div>
+          <div class="grid-button" onclick="percent15()">15%</div>
+          <div class="grid-button" onclick="percent25()">25%</div>
+          <div class="grid-button" onclick="percent50()">50%</div>
+          <div class="grid-button-2">
+            <input type="text" name="custom-tip" id="custom-tip-input" placeholder="Custom" onkeyup="percentCustom()">
+          </div>
+        </div>
+
+        <div class="flex-container" id="flex-container-2">
+          <label class="input-label" for="customers" id="people-label">Number of People</label>
+          <p id="error-2"></p>
+        </div>
+        
+        <div class="customers-input-container">
+          <img src="./images/icon-person.svg" alt="person">
+          <input type="text" name="customers" id="customers-input" class="calculator-input" placeholder="0" onkeyup="validateInputs()">
+        </div>
+      </div>
+    
+
+      <div class="card-2">
+        <div class="desktop-container-2">
+          <div class="tip-container">
+            <div class="column-container">
+              <p id="card-2-text-1">Tip Amount</p>
+              <p id="card-2-text-2">/ person</p>
+            </div>
+            <p id="tip-per-person">$0.00</p>
+          </div>
+          <div class="total-container">
+            <div class="column-container">
+              <p id="card-2-text-1">Total</p>
+              <p id="card-2-text-2">/ person</p>
+            </div>
+            <p id="total-per-person">$0.00</p>
+          </div>
+        </div>
+        <button class="reset-button" disabled id="reset"  onclick="reset()">
+          RESET
+        </button>
+      </div>
+    </div>
+
+  </section>
+  <script src="/utilities/main.js"></script>
+</body>
+</html>
