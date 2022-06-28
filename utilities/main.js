@@ -152,11 +152,13 @@ const checkCustomInput = () =>
 {
     let custom = customInput.value.trim();
     let customAmount = parseFloat(custom);
+    console.log(customAmount)
     let customString = customAmount.toString();
+    console.log(customString)
     let decimalFlag = 0;
     if(customString.includes("."))
     {
-        customString = billString.slice(billString.indexOf(".")+1, billString.length);
+        customString = customString.slice(customString.indexOf(".")+1, customString.length);
         if(customString.length > 2)
         {
             decimalFlag++;
@@ -185,7 +187,7 @@ const percentCustom = () =>
     {
         return;
     }
-    let percentage = (Number(customInput.value) / 100.00).toFixed(2);
+    let percentage = (Number(customInput.value) / 100.00);
     let totalBill = Number(billInput.value).toFixed(2);
     let customers = Number(customerInput.value);
     let tipPerPerson = (totalBill * percentage) / customers;
