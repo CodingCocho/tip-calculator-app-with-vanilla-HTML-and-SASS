@@ -2,7 +2,7 @@
 
 ![Design preview for the Interactive Rating component coding challenge](./images/desktop-preview.jpg)
 
-This challenge was completed by Raul Uriostegui Jr on 6-25-2022.
+This challenge was completed by Raul Uriostegui Jr on 6-27-2022.
 This is the repository that holds my solution. 
 
 # Learning outcomes
